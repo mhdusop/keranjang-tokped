@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Counter() {
 
-    let [num, setNum]= useState(0);
+    let [num, setNum]= useState(1);
 
     let increment = () => {
         setNum(function (prevCount) {
@@ -12,10 +12,10 @@ export default function Counter() {
 
     let decrement = () => {
         setNum(function (prevCount) {
-            if (prevCount > 0) {
+            if (prevCount > 1) {
                 return (prevCount -= 1); 
             } else {
-                return (prevCount = 0);
+                return (prevCount = 1);
             }
         });
     }
